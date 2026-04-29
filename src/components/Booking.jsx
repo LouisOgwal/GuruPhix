@@ -29,14 +29,28 @@ export default function Booking() {
 
     const phone = "254745054505";
 
-    // 🔥 SMART WHATSAPP ROUTING
+    // 🔥 SMART DETECTION (mobile vs desktop)
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+    // Primary WhatsApp link
     const url = isMobile
       ? `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
       : `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
 
-    window.open(url, "_blank");
+    // 🔥 UNIVERSAL FALLBACK (most reliable)
+    const fallbackUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+
+    try {
+      const newWindow = window.open(url, "_blank");
+
+      // If popup blocked or failed → fallback
+      if (!newWindow || newWindow.closed) {
+        window.location.href = fallbackUrl;
+      }
+
+    } catch (error) {
+      window.location.href = fallbackUrl;
+    }
   };
 
   return (
