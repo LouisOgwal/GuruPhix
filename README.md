@@ -1,16 +1,87 @@
-# React + Vite
+# 🔧 GuruPhix - Phone Repair & Data Recovery Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GuruPhix is a modern, responsive web application for a professional phone repair service.  
+It allows users to book repairs, view services, browse repair work, and contact the business instantly via WhatsApp, phone, or email.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Live Features
 
-## React Compiler
+- 📱 Repair booking system (WhatsApp integration)
+- 🛠 Full services listing (hardware & software repairs)
+- 📸 Repair gallery with images & videos
+- 📍 Location page with Google Maps integration
+- 📞 Contact page (call, WhatsApp, email)
+- ⚡ Responsive modern UI (glassmorphism design)
+- 🌐 Smooth single-page navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- JavaScript (ES6+)
+- CSS (custom + glassmorphism design)
+- WhatsApp API integration
+- Google Maps embed
+
+---
+
+##  Project Structure
+
+
+src/
+components/
+Navbar.jsx
+Hero.jsx
+Services.jsx
+Gallery.jsx
+Booking.jsx
+Contact.jsx
+Location.jsx
+Footer.jsx
+About.jsx
+App.jsx
+App.css
+
+public/
+media/ (images & videos)
+
+
+---
+
+##  Contact Information
+
+-  Location: Nairobi CBD, Kenya  
+-  Phone: +254 745 054 505  
+-  Email: godfreymboya941@gmail.com  
+-  WhatsApp: https://wa.me/254745054505  
+
+---
+
+##  About
+
+GuruPhix specializes in:
+- Microsoldering
+- Logic board repair
+- Data recovery
+- Advanced smartphone diagnostics
+
+We restore devices that are considered non-repairable.
+
+---
+
+##  Installation & Setup
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/guruphix.git
+
+# Navigate into project
+cd guruphix
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
