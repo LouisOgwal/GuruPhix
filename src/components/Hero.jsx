@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="hero-content relative z-10 px-6">
 
         <h1 className="text-5xl md:text-6xl font-bold mb-4">
-           iPhix / Guru
+           GuruPhix
         </h1>
 
         <h2 className="text-xl md:text-3xl font-semibold mb-6 text-cyan-400">

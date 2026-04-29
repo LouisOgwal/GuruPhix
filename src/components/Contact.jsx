@@ -19,22 +19,20 @@ export default function Contact() {
 
         <p>📍 Nairobi, Kenya</p>
 
-        {/* PHONE CLICK */}
         <p>
           📞{" "}
           <a
-            href="tel:+254792871075"
+            href="tel:+254745054505"
             style={{ color: "#00e5ff", textDecoration: "none" }}
           >
-            +254 792 871 075
+            +254 745 054 505
           </a>
         </p>
 
-        {/* WHATSAPP CLICK */}
         <p>
           💬{" "}
           <a
-            href="https://wa.me/254792871075"
+            href="https://wa.me/254745054505"
             target="_blank"
             style={{ color: "#00ffa3", textDecoration: "none" }}
           >
@@ -42,24 +40,17 @@ export default function Contact() {
           </a>
         </p>
 
-        {/* EMAIL CLICK */}
         <p>
           📧{" "}
           <a
-            href="mailto:yienlouis470@gmail.com"
+            href="mailto:godfreymboya941@gmail.com"
             style={{ color: "#00e5ff", textDecoration: "none" }}
           >
-            yienlouis470@gmail.com
+            godfreymboya941@gmail.com
           </a>
         </p>
 
-        <p
-          style={{
-            opacity: 0.6,
-            marginTop: "15px",
-            fontSize: "13px"
-          }}
-        >
+        <p style={{ opacity: 0.6, marginTop: "15px", fontSize: "13px" }}>
           We respond quickly to all repair inquiries and bookings.
         </p>
 

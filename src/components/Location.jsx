@@ -1,9 +1,9 @@
 export default function Location() {
 
-  const phone = "254792871075";
+  const phone = "254745054505";
 
   const message =
-`📍 LOCATION REQUEST - iPhix Guru
+`📍 LOCATION REQUEST - GuruPhix
 
 Hello 👋
 I would like to visit your repair shop.
@@ -31,13 +31,13 @@ Kindly share exact directions / floor details.`;
       </h2>
 
       <p style={{ textAlign: "center", opacity: 0.7 }}>
-        Located in Nairobi CBD for fast walk-in repairs
+         Located in Nairobi CBD for fast walk-in repairs
       </p>
 
       {/* LOCATION CARD */}
       <div style={card}>
 
-        <h3>iPhix Guru Repair Center</h3>
+        <h3>GuruPhix Repair Center</h3>
 
         <p style={{ opacity: 0.8 }}>
           Mwalimu Cooperative House, 8th Floor <br />

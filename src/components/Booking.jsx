@@ -17,7 +17,7 @@ export default function Booking() {
     e.preventDefault();
 
     const message =
-`🔥 NEW REPAIR BOOKING - iPhix Guru
+`🔥 NEW REPAIR BOOKING - GuruPhix
 
 👤 Name: ${form.name}
 📞 Phone: ${form.phone}
@@ -27,7 +27,7 @@ export default function Booking() {
 
 🚀 Please respond ASAP`;
 
-    const url = `https://wa.me/254792871075?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/254745054505?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   };
@@ -44,9 +44,7 @@ export default function Booking() {
       <form onSubmit={handleSubmit} style={formStyle}>
 
         <input name="name" placeholder="Full Name" onChange={handleChange} style={input} />
-
         <input name="phone" placeholder="Phone Number" onChange={handleChange} style={input} />
-
         <input name="device" placeholder="Device (e.g iPhone 13)" onChange={handleChange} style={input} />
 
         <select name="location" onChange={handleChange} style={input}>

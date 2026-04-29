@@ -42,7 +42,7 @@ export default function Admin() {
             <p>{d.location}</p>
 
             <a
-              href={`https://wa.me/254792871075?text=Repair%20Update%20for%20${d.id}`}
+              href={`https://wa.me/254745054505?text=Repair%20Update%20for%20${d.id}`}
               className="btn"
               target="_blank"
             >
