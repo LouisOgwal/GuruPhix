@@ -8,21 +8,22 @@ export default function About() {
 
       <div className="card">
 
-        <p style={{ marginBottom: "16px", lineHeight: "1.7" }}>
-          We provide fast, reliable, and affordable solutions for all common flagship phone problems.
-          Whether it’s a hardware fault or a software issue, our technicians are equipped to diagnose
-          and fix your device efficiently.
+        <p style={{ marginBottom: "16px", lineHeight: "1.8" }}>
+          GuruPhix is a professional mobile repair service specializing in fast,
+          reliable, and high-quality smartphone repairs in Nairobi. We diagnose
+          and fix both hardware and software issues with precision and care.
         </p>
 
-        <p style={{ lineHeight: "1.7", marginBottom: "16px" }}>
-          We specialize in iPhone repair in Nairobi, offering trusted solutions for screen damage, charging issues,
-          software faults, and advanced motherboard-level repairs.
+        <p style={{ marginBottom: "16px", lineHeight: "1.8" }}>
+          Our expertise covers iPhone and flagship device repairs including
+          screen replacement, charging faults, battery issues, and complex
+          motherboard-level problems such as logic board and microsoldering repairs.
         </p>
 
-        <p style={{ lineHeight: "1.7" }}>
-          GuruPhix specializes in advanced electronics repair, focusing on logic board restoration,
-          microsoldering, and complex device recovery. We help restore devices that are considered
-          non-repairable.
+        <p style={{ lineHeight: "1.8" }}>
+          We focus on restoring devices that others consider unrepairable,
+          delivering trusted solutions with transparency, speed, and professional
+          quality service.
         </p>
 
       </div>
