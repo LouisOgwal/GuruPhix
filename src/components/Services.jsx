@@ -8,36 +8,42 @@ const services = [
     details:
       "We replace and restore damaged displays using premium quality parts with full calibration."
   },
+
   {
     title: "Battery Problems",
     desc: "Fast draining, overheating, shutdowns.",
     details:
       "Battery replacement and power optimization."
   },
+
   {
     title: "Charging Issues",
     desc: "Not charging or loose port.",
     details:
       "Charging port repair and power IC fixes."
   },
+
   {
     title: "Water / Liquid Damage",
     desc: "Liquid exposure or corrosion.",
     details:
       "Ultrasonic cleaning and board recovery."
   },
+
   {
     title: "Phone Not Turning On",
     desc: "Dead phone or no response.",
     details:
       "Motherboard and power circuit diagnostics."
   },
+
   {
     title: "Speaker / Audio Issues",
     desc: "No sound or distortion.",
     details:
       "Speaker and audio component repair."
   },
+
   {
     title: "Microphone Issues",
     desc: "Voice not detected in calls.",
@@ -45,7 +51,7 @@ const services = [
       "Microphone circuit repair."
   },
 
-  /* ✅ CAMERA FULL DETAIL (kept exactly, no change logic) */
+  /* CAMERA (UNCHANGED STRUCTURE) */
   {
     title: "Camera Issues",
     desc: "Blurry camera, black screen, camera failure.",
@@ -78,18 +84,21 @@ Common symptoms include:
     details:
       "System repair and optimization."
   },
+
   {
     title: "Boot Loop / Stuck Logo",
     desc: "Phone stuck on startup.",
     details:
       "Firmware repair and system recovery."
   },
+
   {
     title: "Storage / Performance Issues",
     desc: "Slow phone or low storage.",
     details:
       "System cleanup and optimization."
   },
+
   {
     title: "Virus / Malware Issues",
     desc: "Popups or unwanted apps.",
@@ -97,17 +106,30 @@ Common symptoms include:
       "Malware removal and security cleanup."
   },
 
+  /* 🔥 UPGRADED SECTION (IMPORTANT FIX) */
   {
     title: "No Network / SIM Issues",
-    desc: "No service or SIM errors.",
-    details: `Baseband and network repair.
+    desc: "No service, SIM errors, or weak signal problems.",
+    details: `Baseband and network system repair (hardware + software level).
 
-Fixes:
+Common symptoms:
+
 • No Service / Weak Signal  
-• SIM Not Detected  
-• Invalid IMEI  
-• Network Failure  
-• Connectivity Issues`
+• Phone constantly searching for network  
+• SIM Card Not Detected / Invalid SIM  
+• Unknown Modem Firmware  
+• Missing or Null IMEI  
+• Call, SMS, and Mobile Data failure  
+• Network drops frequently or unstable connection  
+• Wi-Fi or Bluetooth greyed out (baseband-related cases)  
+• Overheating due to constant network scanning  
+• Rapid battery drain caused by network failure  
+
+We perform:
+• Baseband IC diagnostics & repair  
+• IMEI restoration (where applicable)  
+• SIM reader and tray circuit repair  
+• Logic board level microsoldering`
   },
 
   {
@@ -123,6 +145,7 @@ Fixes:
     details:
       "Microsoldering and IC-level repair."
   },
+
   {
     title: "Data Recovery",
     desc: "Recover lost files.",
@@ -169,7 +192,6 @@ ${service.desc}
             key={i}
             className="card"
             onClick={() => setSelected(s)}
-            style={{ cursor: "pointer" }}
           >
             <h3>{s.title}</h3>
             <p style={{ opacity: 0.7 }}>{s.desc}</p>
@@ -210,6 +232,8 @@ ${service.desc}
     </div>
   );
 }
+
+/* ================= MODAL STYLES ================= */
 
 const overlay = {
   position: "fixed",
