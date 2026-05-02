@@ -29,7 +29,7 @@ export default function Gallery() {
       </h2>
 
       <p style={{ textAlign: "center", opacity: 0.6 }}>
-        Real repair work from iPhix Guru
+        Real repair work from GuruPhix
       </p>
 
       {/* GRID */}
