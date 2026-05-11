@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -13,6 +15,41 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
+      <Helmet>
+        <title>
+          GuruPhix | Phone Repair Services in Nairobi
+        </title>
+
+        <meta
+          name="description"
+          content="Professional iPhone, Samsung and Android phone repair services in Nairobi. Screen replacement, charging port repair, battery replacement and diagnostics."
+        />
+
+        <meta
+          name="keywords"
+          content="phone repair Nairobi, iPhone repair Kenya, Android repair, screen replacement, charging port repair, GuruPhix"
+        />
+
+        <meta name="author" content="GuruPhix" />
+
+        <meta
+          property="og:title"
+          content="GuruPhix | Phone Repair Services in Nairobi"
+        />
+
+        <meta
+          property="og:description"
+          content="Professional phone repair services in Nairobi including screen replacement, battery replacement and diagnostics."
+        />
+
+        <meta
+          property="og:url"
+          content="https://guruphix.com"
+        />
+
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <Navbar />
 
       {/* HOME */}
@@ -20,7 +57,7 @@ export default function App() {
         <Hero />
       </section>
 
-      {/* ABOUT (FIXED MISSING SECTION) */}
+      {/* ABOUT */}
       <section id="about">
         <About />
       </section>
