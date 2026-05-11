@@ -32,6 +32,12 @@ export default function App() {
 
         <meta name="author" content="GuruPhix" />
 
+        {/* Canonical URL (VERY IMPORTANT FOR GOOGLE) */}
+        <link
+          rel="canonical"
+          href="https://www.guruphix.com"
+        />
+
         <meta
           property="og:title"
           content="GuruPhix | Phone Repair Services in Nairobi"
@@ -44,7 +50,7 @@ export default function App() {
 
         <meta
           property="og:url"
-          content="https://guruphix.com"
+          content="https://www.guruphix.com"
         />
 
         <meta property="og:type" content="website" />
