@@ -16,44 +16,77 @@ export default function App() {
   return (
     <>
       <Helmet>
+        {/* =========================
+            PRIMARY SEO
+        ========================= */}
         <title>
-          GuruPhix | Phone Repair Services in Nairobi
+          GuruPhix | Phone Repair in Nairobi – iPhone & Android Fix Experts
         </title>
 
         <meta
           name="description"
-          content="Professional iPhone, Samsung and Android phone repair services in Nairobi. Screen replacement, charging port repair, battery replacement and diagnostics."
+          content="GuruPhix offers fast and reliable phone repair in Nairobi. We fix iPhone, Samsung and Android devices including screen replacement, battery issues, charging ports and diagnostics."
         />
 
         <meta
           name="keywords"
-          content="phone repair Nairobi, iPhone repair Kenya, Android repair, screen replacement, charging port repair, GuruPhix"
+          content="phone repair Nairobi, mobile repair Kenya, iPhone repair Nairobi, Samsung repair Kenya, screen replacement Nairobi, charging port repair, GuruPhix"
         />
 
         <meta name="author" content="GuruPhix" />
+        <meta name="robots" content="index, follow" />
 
-        {/* Canonical URL (VERY IMPORTANT FOR GOOGLE) */}
-        <link
-          rel="canonical"
-          href="https://www.guruphix.com"
-        />
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.guruphix.com/" />
 
-        <meta
-          property="og:title"
-          content="GuruPhix | Phone Repair Services in Nairobi"
-        />
+        {/* =========================
+            OPEN GRAPH (SOCIAL MEDIA)
+        ========================= */}
+        <meta property="og:title" content="GuruPhix | Phone Repair Nairobi" />
 
         <meta
           property="og:description"
-          content="Professional phone repair services in Nairobi including screen replacement, battery replacement and diagnostics."
+          content="Fast and affordable phone repair services in Nairobi. Screen, battery and hardware repair experts."
         />
 
-        <meta
-          property="og:url"
-          content="https://www.guruphix.com"
-        />
-
+        <meta property="og:url" content="https://www.guruphix.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.guruphix.com/preview.jpg" />
+
+        {/* =========================
+            TWITTER CARD
+        ========================= */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GuruPhix Phone Repair Nairobi" />
+        <meta
+          name="twitter:description"
+          content="Professional phone repair services in Nairobi. Fast, affordable and reliable."
+        />
+        <meta name="twitter:image" content="https://www.guruphix.com/preview.jpg" />
+
+        {/* =========================
+            LOCAL BUSINESS SCHEMA
+        ========================= */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "GuruPhix",
+            "url": "https://www.guruphix.com/",
+            "image": "https://www.guruphix.com/logo.png",
+            "telephone": "+254XXXXXXXXX",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nairobi",
+              "addressCountry": "KE"
+            },
+            "description": "GuruPhix provides expert phone repair services in Nairobi including screen replacement, battery repair, charging port repair and diagnostics.",
+            "areaServed": "Nairobi",
+            "priceRange": "$$"
+          }
+        `}
+        </script>
       </Helmet>
 
       <Navbar />
